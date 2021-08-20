@@ -22,13 +22,13 @@ RUN apt-get update && \
                        dnsutils sshpass && \
     apt-get -y clean all
 
-ENV ROOT_PASSWORD="**ChangeMe**" \
+ENV ROOT_PASSWORD="begluster123" \
     SSH_PORT=2222 \
     SSH_USER=root \
-    GLUSTER_VOLUMES=vol \
+    GLUSTER_VOLUMES=bedata \
     GLUSTER_VOL_OPTS="" \
     GLUSTER_ALL_VOLS_OPTS="" \
-    GLUSTER_BRICK_PATH=/gluster_volume \
+    GLUSTER_BRICK_PATH=/gluster_br0 \
     SERVICE_NAME=gluster \
     DEBUG=0
 
